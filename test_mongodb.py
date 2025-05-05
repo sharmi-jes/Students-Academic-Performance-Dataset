@@ -1,47 +1,17 @@
-import os
-import sys
 
-import pymongo.mongo_client
-from Student_Performace.logging import logger
-from Student_Performace.exception.exception import StudentException
-from dotenv import load_dotenv
-load_dotenv()
-import pandas as pd
-import json
-import numpy as np
-import certifi
-ca=certifi.where()
-import pymongo
+from pymongo.mongo_client import MongoClient
 
-class StudentDataExtract():
-    def __init__(self):
-        try:
-            pass
-        except Exception as e:
-            raise StudentException(e,sys)
-        
-    def csv_to_json(self,file_path):
-        try:
+uri = "mongodb+srv://manikantaanyum966:admin123@cluster0.rvzge3r.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
-         data=pd.read_csv(file_path)
-         data.reset_index(drop=True,inplace=True)
-         records=list(json.loads(data.T.to_json()).values())
-         return records
-        except Exception as e:
-            raise StudentException(e,sys)
-    
-    def insert_into_mongodb(self,records,database,collection):
-        try:
+# Create a new client and connect to the server
+client = MongoClient(uri)
 
-         self.records=records
-         self.collection=collection
-         self.database=database
+# # This should now work
+print("Databases:", client.list_database_names())
 
-         self.pymongo_client=pymongo.mongo_client('')
-         self.database=self.pymongo_client[self.database]
-         self.collection-=self.database[self.collection]
-
-         self.collection.insert_many(self.records)
-         return len(self.records)
-        except Exception as e:
-           raise StudentException(e,sys)
+# Send a ping to confirm a successful connection
+try:
+    client.admin.command('ping')
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    print(e)
