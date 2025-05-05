@@ -14,6 +14,8 @@ Student_Performace/components/model_trainer.py
 Student_Performace/constant/__init__.py
 Student_Performace/entity/__init__.py
 Student_Performace/exception/__init__.py
+Student_Performace/exception/exception.py
 Student_Performace/logging/__init__.py
+Student_Performace/logging/logger.py
 Student_Performace/pipeline/__init__.py
 Student_Performace/utils/__init__.py

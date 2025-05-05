@@ -2,6 +2,7 @@ pandas
 numpy
 matplotlib
 python-dotenv
-
+pymongo[srv]==3.6
+pymongo
 
 -e .
