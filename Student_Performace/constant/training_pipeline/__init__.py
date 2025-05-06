@@ -28,3 +28,15 @@ DATA_VALIDATION_VALID_DIR="validated"
 DATA_VALIDATION_INVLAID_DIR="invalidated"
 DATA_VALIDATION_DRIFT_REPORT_DIR='drift_report'
 DATA_VALIDATION_DRIFT_REPORT_FILE_PATH="report.yaml"
+
+
+'''Data Transformation related constant variables'''
+DATA_TRANSFORMATION_DIR="data_transformation"
+DATA_TRANSFORMATION_TRANSFORMED_DIR="transformed"
+DATA_TRANSFORMATION_OBJECT_DIR="transformed_object"
+
+DATA_TRANSFORMATION_KNNIMPUTER=(
+    "missing_values":np.nan,
+    "neighbors":3,
+    "weights":"uniform",
+)
