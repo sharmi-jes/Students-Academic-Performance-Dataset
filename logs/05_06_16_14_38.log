@@ -1,0 +1,8 @@
+[2025-05-06 16:14:40,679] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-06 16:14:40,679] 24 root - INFO - read the data from mongodb
+[2025-05-06 16:14:40,679] 42 root - INFO - store the data into store path as csv format
+[2025-05-06 16:14:40,679] 55 root - INFO - split the data as train and test
+[2025-05-06 16:14:40,679] 68 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-06 16:14:44,258] 20 root - INFO - Data Validation Process started
+[2025-05-06 16:14:44,329] 33 root - INFO - Schema cols: 17, Dataset cols: 18
+[2025-05-06 16:14:44,329] 85 root - ERROR - Train file column mismatch

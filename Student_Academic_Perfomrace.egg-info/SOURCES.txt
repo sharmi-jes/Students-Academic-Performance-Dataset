@@ -22,3 +22,5 @@ Student_Performace/logging/__init__.py
 Student_Performace/logging/logger.py
 Student_Performace/pipeline/__init__.py
 Student_Performace/utils/__init__.py
+Student_Performace/utils/main_utils/__init__.py
+Student_Performace/utils/main_utils/utils.py

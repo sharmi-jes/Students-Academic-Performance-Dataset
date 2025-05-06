@@ -1,0 +1,6 @@
+[2025-05-06 14:55:37,563] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-06 14:55:37,563] 24 root - INFO - read the data from mongodb
+[2025-05-06 14:55:37,563] 41 root - INFO - store the data into store path as csv format
+[2025-05-06 14:55:37,563] 54 root - INFO - split the data as train and test
+[2025-05-06 14:55:37,563] 67 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-06 14:55:41,609] 21 root - INFO - Data Validation Process started

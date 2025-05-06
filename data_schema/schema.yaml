@@ -1,0 +1,25 @@
+columns:
+  gender: object
+  NationalITy: object
+  PlaceofBirth: object
+  StageID: object
+  GradeID: object
+  SectionID: object
+  Topic: object
+  Semester: object
+  Relation: object
+  raisedhands: int
+  VisITedResources: int
+  AnnouncementsView: int
+  Discussion: int
+  ParentAnsweringSurvey: object
+  ParentschoolSatisfaction: object
+  StudentAbsenceDays: object
+  Class: object
+
+
+numerical_columns:
+ -VisITedResources
+ -AnnouncementsView
+ -Discussion
+ -raisedhands

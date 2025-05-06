@@ -34,7 +34,8 @@ class DataIngestion:
             df=pd.DataFrame(list(collection.find()))
             if "_id" in df.columns:
                 df=df.drop(columns="_id",axis=1)
-            df.replace({"nan",np.nan},inplace=True)
+            df.replace("nan", np.nan, inplace=True)
+
             return df
         except Exception as e:
             raise StudentException(e,sys)
