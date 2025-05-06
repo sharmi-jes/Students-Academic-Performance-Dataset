@@ -12,7 +12,10 @@ Student_Performace/components/data_transformation.py
 Student_Performace/components/data_validation.py
 Student_Performace/components/model_trainer.py
 Student_Performace/constant/__init__.py
+Student_Performace/constant/training_pipeline/__init__.py
 Student_Performace/entity/__init__.py
+Student_Performace/entity/artfact_entity.py
+Student_Performace/entity/config_entity.py
 Student_Performace/exception/__init__.py
 Student_Performace/exception/exception.py
 Student_Performace/logging/__init__.py
