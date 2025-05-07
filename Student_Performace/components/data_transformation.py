@@ -104,6 +104,8 @@ class DataTransformation:
             # input_feature_train_df=label_encoder.fit_transform(input_feature_train_df)
             # input_feature_test_df=label_encoder.transform(input_feature_test_df)
 
+            print(input_feature_test_df)
+
             preprocessor=self.get_data_transformer_object()
             preprocessor_object=preprocessor.fit(input_feature_train_df)
             transformed_object_train_file=preprocessor.transform(input_feature_train_df)

@@ -22,3 +22,15 @@ class DataTransformationArtifact:
     data_transformed_object_dir:str
     data_transformed_train_file:str
     data_transformed_test_file:str
+
+@dataclass
+class ClassificationMetricArtifact:
+    accuracy_score:float
+    precision:float
+    recall:float
+
+@dataclass
+class ModelTrainerArtifact:
+    model_file_path:str
+    train_metric:ClassificationMetricArtifact
+    test_metric:ClassificationMetricArtifact

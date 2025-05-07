@@ -41,3 +41,12 @@ DATA_TRANSFORMATION_KNNIMPUTER={
    "n_neighbors": 3,
     "weights":"uniform",
 }
+
+'''Model Trainer related constant variables
+'''
+
+MODEL_TRAINER_DIR="model_trainer"
+MODEL_TRAINER_TRAINER_DIR="trained_model"
+MODEL_TRAINER_EXPECTED_SCORE:float=0.6
+MODEL_TRAINER_UNDERFITTING_THRESHOLD=0.5
+MODEL_TRAINER_MODEL_FILE_PATH="model.pkl"
