@@ -1,0 +1,54 @@
+AnnouncementsView:
+  drift_status: false
+  p_value: 0.8120877038240616
+Class:
+  drift_status: false
+  p_value: 0.9997593040875604
+Discussion:
+  drift_status: false
+  p_value: 0.4701537329672213
+GradeID:
+  drift_status: false
+  p_value: 0.8357710707308145
+NationalITy:
+  drift_status: false
+  p_value: 0.8357710707308145
+ParentAnsweringSurvey:
+  drift_status: false
+  p_value: 0.21396422816730545
+ParentschoolSatisfaction:
+  drift_status: false
+  p_value: 0.9999999999999983
+PlaceofBirth:
+  drift_status: false
+  p_value: 0.9999105241411889
+Relation:
+  drift_status: false
+  p_value: 0.9999999986974856
+SectionID:
+  drift_status: false
+  p_value: 0.9588887506208608
+Semester:
+  drift_status: false
+  p_value: 1.0
+StageID:
+  drift_status: false
+  p_value: 0.9999999986974856
+StudentAbsenceDays:
+  drift_status: false
+  p_value: 0.9999985230221365
+Topic:
+  drift_status: false
+  p_value: 0.22890803872047583
+'Unnamed: 0':
+  drift_status: false
+  p_value: 0.8120877038240616
+VisITedResources:
+  drift_status: false
+  p_value: 0.9959499287514888
+gender:
+  drift_status: false
+  p_value: 1.0
+raisedhands:
+  drift_status: false
+  p_value: 0.4701537329672213

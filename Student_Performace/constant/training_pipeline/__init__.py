@@ -1,5 +1,6 @@
 import os
 import sys
+import numpy as np
 
 '''Training pipeline related constant variables'''
 TARGET_VARIABLE:str="Class"
@@ -35,8 +36,8 @@ DATA_TRANSFORMATION_DIR="data_transformation"
 DATA_TRANSFORMATION_TRANSFORMED_DIR="transformed"
 DATA_TRANSFORMATION_OBJECT_DIR="transformed_object"
 
-DATA_TRANSFORMATION_KNNIMPUTER=(
+DATA_TRANSFORMATION_KNNIMPUTER={
     "missing_values":np.nan,
-    "neighbors":3,
+   "n_neighbors": 3,
     "weights":"uniform",
-)
+}

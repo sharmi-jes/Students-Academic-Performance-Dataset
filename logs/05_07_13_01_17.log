@@ -1,0 +1,11 @@
+[2025-05-07 13:01:19,701] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-07 13:01:19,701] 24 root - INFO - read the data from mongodb
+[2025-05-07 13:01:19,701] 42 root - INFO - store the data into store path as csv format
+[2025-05-07 13:01:19,702] 55 root - INFO - split the data as train and test
+[2025-05-07 13:01:19,702] 68 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-07 13:01:22,493] 20 root - INFO - Data Validation Process started
+[2025-05-07 13:01:22,541] 36 root - INFO - Required number of columns:2
+[2025-05-07 13:01:22,541] 37 root - INFO - Data frame has columns:18
+[2025-05-07 13:01:22,545] 36 root - INFO - Required number of columns:2
+[2025-05-07 13:01:22,545] 37 root - INFO - Data frame has columns:18
+[2025-05-07 13:01:22,607] 27 root - INFO - Data TRansformation Process started
