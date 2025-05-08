@@ -6,8 +6,8 @@ from Student_Performace.logging.logger import logging
 from Student_Performace.entity.config_entity import DataIngestionconfig,DataValidationConfig,DataTransformationConfig
 from Student_Performace.entity.config_entity import TrainingPipelineConfig
 
-# from networksecurity.components.model_trainer import ModelTrainer
-# from networksecurity.entity.config_entity import ModelTrainerConfig
+from Student_Performace.components.model_trainer import ModelTrainer
+from Student_Performace.entity.config_entity import ModelTrainerConfig
  
 
 if __name__ == "__main__":
@@ -29,3 +29,10 @@ if __name__ == "__main__":
     data_transformation=DataTransformation(data_validation_artifacts,data_transformation_config)
     data_transformation_artifacts=data_transformation.initiate_data_transformation()
     print(data_transformation_artifacts)
+
+    logging.info("Model Trainer process started")
+    model_trainer_config=ModelTrainerConfig(training_pipeline_config)
+    model_trainer = ModelTrainer(model_trainer_config, data_transformation_artifacts)
+
+    model_trainer_artifact=model_trainer.initiate_model_trainer()
+    print(model_trainer_artifact)

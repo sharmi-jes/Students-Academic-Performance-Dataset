@@ -1,0 +1,5 @@
+[2025-05-08 08:51:36,434] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-08 08:51:36,434] 24 root - INFO - read the data from mongodb
+[2025-05-08 08:51:36,434] 42 root - INFO - store the data into store path as csv format
+[2025-05-08 08:51:36,434] 55 root - INFO - split the data as train and test
+[2025-05-08 08:51:36,434] 68 root - INFO - initta ethe data ingestion function to call all fuction

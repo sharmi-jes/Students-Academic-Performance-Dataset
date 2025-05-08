@@ -1,0 +1,18 @@
+[2025-05-08 11:01:58,190] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-08 11:01:58,191] 24 root - INFO - read the data from mongodb
+[2025-05-08 11:01:58,191] 42 root - INFO - store the data into store path as csv format
+[2025-05-08 11:01:58,191] 55 root - INFO - split the data as train and test
+[2025-05-08 11:01:58,191] 68 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-08 11:02:01,743] 20 root - INFO - Data Validation Process started
+[2025-05-08 11:02:01,798] 36 root - INFO - Required number of columns:2
+[2025-05-08 11:02:01,798] 37 root - INFO - Data frame has columns:18
+[2025-05-08 11:02:01,798] 36 root - INFO - Required number of columns:2
+[2025-05-08 11:02:01,799] 37 root - INFO - Data frame has columns:18
+[2025-05-08 11:02:01,880] 27 root - INFO - Data TRansformation Process started
+[2025-05-08 11:02:02,000] 53 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[2025-05-08 11:02:02,001] 58 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-05-08 11:02:02,026] 47 root - INFO - Entered the save_object method of MainUtils class
+[2025-05-08 11:02:02,029] 51 root - INFO - Exited the save_object method of MainUtils class
+[2025-05-08 11:02:02,029] 47 root - INFO - Entered the save_object method of MainUtils class
+[2025-05-08 11:02:02,030] 51 root - INFO - Exited the save_object method of MainUtils class
+[2025-05-08 11:02:02,031] 33 root - INFO - Model Trainer process started

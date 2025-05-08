@@ -40,7 +40,7 @@ def save_numpy_array_data(file_path: str, array: np.array):
         with open(file_path, "wb") as file_obj:
             np.save(file_obj, array)
     except Exception as e:
-        raise NetworkSecurityException(e, sys) from e
+        raise StudentException(e, sys) from e
     
 def save_object(file_path: str, obj: object) -> None:
     try:
@@ -50,7 +50,7 @@ def save_object(file_path: str, obj: object) -> None:
             pickle.dump(obj, file_obj)
         logging.info("Exited the save_object method of MainUtils class")
     except Exception as e:
-        raise NetworkSecurityException(e, sys) from e
+        raise StudentException(e, sys) from e
     
 def load_object(file_path: str, ) -> object:
     try:
@@ -60,7 +60,7 @@ def load_object(file_path: str, ) -> object:
             print(file_obj)
             return pickle.load(file_obj)
     except Exception as e:
-        raise NetworkSecurityException(e, sys) from e
+        raise StudentException(e, sys) from e
     
 def load_numpy_array_data(file_path: str) -> np.array:
     """
@@ -70,9 +70,11 @@ def load_numpy_array_data(file_path: str) -> np.array:
     """
     try:
         with open(file_path, "rb") as file_obj:
-            return np.load(file_obj)
+           return np.load(file_path, allow_pickle=True)
+            # return np.load(file_obj)
+
     except Exception as e:
-        raise NetworkSecurityException(e, sys) from e
+        raise StudentException(e, sys) from e
     
 
 
@@ -107,29 +109,31 @@ def load_numpy_array_data(file_path: str) -> np.array:
 #     except Exception as e:
 #         raise NetworkSecurit
 
+from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import accuracy_score
 
-def evaluate_model(x_train,y_train,x_test,y_test,models):
+def evaluate_model(x_train, y_train, x_test, y_test, models, params):
     try:
-        for i in range(len(list(models))):
-            model=models.values()[i]
-            para=param[models.keys()[i]]
+        report = {}
 
-            gs=GridSearchCV(model,param,cv=5)
-            gs.fit(x_train,y_train)
+        for model_name in models:
+            model = models[model_name]
+            model_params = params[model_name]
 
-            model.set_param(**gs.best_params_)
-            model.fit(x_train,y_train)
+            gs = GridSearchCV(model, model_params, cv=5, n_jobs=-1, verbose=1)
+            gs.fit(x_train, y_train)
 
-            y_train_pred=model.predict(x_train)
-            y_test_pred=model.predict(x_test)
+            best_model = gs.best_estimator_
 
-            accuracy_train=accuracy_score(y_train,y_train_pred)
-            accuracy_test=accuracy_score(y_test,y_test_pred)
-            
-            report[list(models.keys())[i]] = test_model_score
+            y_train_pred = best_model.predict(x_train)
+            y_test_pred = best_model.predict(x_test)
+
+            accuracy_train = accuracy_score(y_train, y_train_pred)
+            accuracy_test = accuracy_score(y_test, y_test_pred)
+
+            report[model_name] = accuracy_test  # or you can use a tuple if you want both
 
         return report
+
     except Exception as e:
-        raise StudentException(e,sys)
-
-
+        raise StudentException(e, sys)
