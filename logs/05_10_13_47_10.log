@@ -1,0 +1,16 @@
+[2025-05-10 13:47:11,808] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-10 13:47:11,808] 24 root - INFO - read the data from mongodb
+[2025-05-10 13:47:11,808] 42 root - INFO - store the data into store path as csv format
+[2025-05-10 13:47:11,808] 55 root - INFO - split the data as train and test
+[2025-05-10 13:47:11,808] 68 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-10 13:47:14,306] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 13:47:14,313] 107 dagshub - INFO - Accessing as sharmi-jes
+[2025-05-10 13:47:14,924] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sharmi-jes/Students-Academic-Performance-Dataset "HTTP/1.1 200 OK"
+[2025-05-10 13:47:15,513] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 13:47:15,515] 107 dagshub - INFO - Initialized MLflow to track repo "sharmi-jes/Students-Academic-Performance-Dataset"
+[2025-05-10 13:47:15,516] 107 dagshub - INFO - Repository sharmi-jes/Students-Academic-Performance-Dataset initialized!
+[2025-05-10 13:47:15,688] 114 fastapi - ERROR - Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+

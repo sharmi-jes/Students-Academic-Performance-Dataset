@@ -10,6 +10,6 @@ Pyaml
 mlflow
 dagshub
 uvicorn
-
-
+python-multipart
+fastapi
 -e .

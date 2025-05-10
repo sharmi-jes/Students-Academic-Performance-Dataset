@@ -1,0 +1,44 @@
+[2025-05-10 19:17:20,872] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-10 19:17:20,872] 24 root - INFO - read the data from mongodb
+[2025-05-10 19:17:20,872] 42 root - INFO - store the data into store path as csv format
+[2025-05-10 19:17:20,872] 55 root - INFO - split the data as train and test
+[2025-05-10 19:17:20,872] 68 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-10 19:17:21,231] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-10 19:17:21,231] 24 root - INFO - read the data from mongodb
+[2025-05-10 19:17:21,231] 42 root - INFO - store the data into store path as csv format
+[2025-05-10 19:17:21,232] 55 root - INFO - split the data as train and test
+[2025-05-10 19:17:21,239] 68 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-10 19:17:21,402] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-10 19:17:21,402] 24 root - INFO - read the data from mongodb
+[2025-05-10 19:17:21,402] 42 root - INFO - store the data into store path as csv format
+[2025-05-10 19:17:21,402] 55 root - INFO - split the data as train and test
+[2025-05-10 19:17:21,402] 68 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-10 19:17:21,598] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-10 19:17:21,598] 24 root - INFO - read the data from mongodb
+[2025-05-10 19:17:21,598] 42 root - INFO - store the data into store path as csv format
+[2025-05-10 19:17:21,598] 55 root - INFO - split the data as train and test
+[2025-05-10 19:17:21,600] 68 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-10 19:17:25,908] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 19:17:25,921] 107 dagshub - INFO - Accessing as sharmi-jes
+[2025-05-10 19:17:26,336] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 19:17:26,341] 107 dagshub - INFO - Accessing as sharmi-jes
+[2025-05-10 19:17:26,631] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 19:17:26,642] 107 dagshub - INFO - Accessing as sharmi-jes
+[2025-05-10 19:17:26,689] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 19:17:26,700] 107 dagshub - INFO - Accessing as sharmi-jes
+[2025-05-10 19:17:26,710] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sharmi-jes/Students-Academic-Performance-Dataset "HTTP/1.1 200 OK"
+[2025-05-10 19:17:27,044] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sharmi-jes/Students-Academic-Performance-Dataset "HTTP/1.1 200 OK"
+[2025-05-10 19:17:27,113] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sharmi-jes/Students-Academic-Performance-Dataset "HTTP/1.1 200 OK"
+[2025-05-10 19:17:27,280] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 19:17:27,284] 107 dagshub - INFO - Initialized MLflow to track repo "sharmi-jes/Students-Academic-Performance-Dataset"
+[2025-05-10 19:17:27,284] 107 dagshub - INFO - Repository sharmi-jes/Students-Academic-Performance-Dataset initialized!
+[2025-05-10 19:17:27,442] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sharmi-jes/Students-Academic-Performance-Dataset "HTTP/1.1 200 OK"
+[2025-05-10 19:17:27,562] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 19:17:27,562] 107 dagshub - INFO - Initialized MLflow to track repo "sharmi-jes/Students-Academic-Performance-Dataset"
+[2025-05-10 19:17:27,562] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 19:17:27,567] 107 dagshub - INFO - Repository sharmi-jes/Students-Academic-Performance-Dataset initialized!
+[2025-05-10 19:17:27,572] 107 dagshub - INFO - Initialized MLflow to track repo "sharmi-jes/Students-Academic-Performance-Dataset"
+[2025-05-10 19:17:27,573] 107 dagshub - INFO - Repository sharmi-jes/Students-Academic-Performance-Dataset initialized!
+[2025-05-10 19:17:27,900] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 19:17:27,902] 107 dagshub - INFO - Initialized MLflow to track repo "sharmi-jes/Students-Academic-Performance-Dataset"
+[2025-05-10 19:17:27,905] 107 dagshub - INFO - Repository sharmi-jes/Students-Academic-Performance-Dataset initialized!

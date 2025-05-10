@@ -1,0 +1,15 @@
+gender,StageID,GradeID,Topic,Semester,Relation,raisedhands,VisITedResources,AnnouncementsView,Discussion,ParentAnsweringSurvey,ParentschoolSatisfaction,StudentAbsenceDays
+M,MiddleSchool,G-07,Quran,S,Father,19,65,50,10,No,Bad,Above-7
+M,MiddleSchool,G-06,English,S,Father,11,70,32,29,Yes,Good,Above-7
+F,MiddleSchool,G-07,Biology,F,Mum,88,81,50,10,Yes,Good,Above-7
+M,lowerlevel,G-02,French,S,Mum,35,97,41,23,Yes,Good,Under-7
+M,HighSchool,G-11,Quran,S,Father,80,80,51,59,Yes,Good,Under-7
+F,MiddleSchool,G-08,Arabic,S,Mum,72,51,42,24,Yes,Bad,Above-7
+F,MiddleSchool,G-06,English,S,Mum,81,79,91,85,Yes,Good,Under-7
+F,lowerlevel,G-04,Science,F,Mum,78,88,74,83,Yes,Good,Under-7
+M,MiddleSchool,G-06,English,F,Mum,71,70,65,69,Yes,Good,Under-7
+M,MiddleSchool,G-08,Geology,F,Father,80,83,82,71,Yes,Good,Above-7
+M,lowerlevel,G-02,IT,F,Father,50,7,9,50,Yes,Bad,Above-7
+
+
+

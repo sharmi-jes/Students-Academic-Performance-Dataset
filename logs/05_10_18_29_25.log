@@ -1,0 +1,24 @@
+[2025-05-10 18:29:27,441] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-10 18:29:27,441] 24 root - INFO - read the data from mongodb
+[2025-05-10 18:29:27,441] 42 root - INFO - store the data into store path as csv format
+[2025-05-10 18:29:27,441] 55 root - INFO - split the data as train and test
+[2025-05-10 18:29:27,441] 68 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-10 18:29:30,788] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 18:29:30,797] 107 dagshub - INFO - Accessing as sharmi-jes
+[2025-05-10 18:29:31,384] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sharmi-jes/Students-Academic-Performance-Dataset "HTTP/1.1 200 OK"
+[2025-05-10 18:29:31,999] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 18:29:31,999] 107 dagshub - INFO - Initialized MLflow to track repo "sharmi-jes/Students-Academic-Performance-Dataset"
+[2025-05-10 18:29:31,999] 107 dagshub - INFO - Repository sharmi-jes/Students-Academic-Performance-Dataset initialized!
+[2025-05-10 18:29:33,703] 20 root - INFO - Data Validation Process started
+[2025-05-10 18:29:33,739] 36 root - INFO - Required number of columns:2
+[2025-05-10 18:29:33,739] 37 root - INFO - Data frame has columns:18
+[2025-05-10 18:29:33,739] 36 root - INFO - Required number of columns:2
+[2025-05-10 18:29:33,739] 37 root - INFO - Data frame has columns:18
+[2025-05-10 18:29:33,766] 27 root - INFO - Data TRansformation Process started
+[2025-05-10 18:29:33,841] 55 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[2025-05-10 18:29:33,841] 60 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-05-10 18:29:33,854] 47 root - INFO - Entered the save_object method of MainUtils class
+[2025-05-10 18:29:33,854] 51 root - INFO - Exited the save_object method of MainUtils class
+[2025-05-10 18:29:33,854] 47 root - INFO - Entered the save_object method of MainUtils class
+[2025-05-10 18:29:33,856] 51 root - INFO - Exited the save_object method of MainUtils class
+[2025-05-10 18:29:33,856] 33 root - INFO - Model Trainer process started

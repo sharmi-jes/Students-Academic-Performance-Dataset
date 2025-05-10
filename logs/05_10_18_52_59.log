@@ -1,0 +1,22 @@
+[2025-05-10 18:53:00,426] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-10 18:53:00,426] 24 root - INFO - read the data from mongodb
+[2025-05-10 18:53:00,429] 42 root - INFO - store the data into store path as csv format
+[2025-05-10 18:53:00,429] 55 root - INFO - split the data as train and test
+[2025-05-10 18:53:00,429] 68 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-10 18:53:01,034] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-10 18:53:01,034] 24 root - INFO - read the data from mongodb
+[2025-05-10 18:53:01,034] 42 root - INFO - store the data into store path as csv format
+[2025-05-10 18:53:01,034] 55 root - INFO - split the data as train and test
+[2025-05-10 18:53:01,041] 68 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-10 18:53:03,438] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 18:53:03,445] 107 dagshub - INFO - Accessing as sharmi-jes
+[2025-05-10 18:53:03,768] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 18:53:03,768] 107 dagshub - INFO - Accessing as sharmi-jes
+[2025-05-10 18:53:03,906] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sharmi-jes/Students-Academic-Performance-Dataset "HTTP/1.1 200 OK"
+[2025-05-10 18:53:04,238] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sharmi-jes/Students-Academic-Performance-Dataset "HTTP/1.1 200 OK"
+[2025-05-10 18:53:04,576] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 18:53:04,578] 107 dagshub - INFO - Initialized MLflow to track repo "sharmi-jes/Students-Academic-Performance-Dataset"
+[2025-05-10 18:53:04,580] 107 dagshub - INFO - Repository sharmi-jes/Students-Academic-Performance-Dataset initialized!
+[2025-05-10 18:53:04,897] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 18:53:04,906] 107 dagshub - INFO - Initialized MLflow to track repo "sharmi-jes/Students-Academic-Performance-Dataset"
+[2025-05-10 18:53:04,907] 107 dagshub - INFO - Repository sharmi-jes/Students-Academic-Performance-Dataset initialized!

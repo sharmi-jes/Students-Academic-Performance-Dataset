@@ -56,6 +56,7 @@ class DataTransformationConfig:
         self.transformation_train_file_path:str=os.path.join(self.data_transformation_dir,training_pipeline.TRAIN_FILE_NAME,training_pipeline.TRAIN_FILE_NAME.replace("csv", "npy"),)
         self.transformation_test_file_path:str=os.path.join(self.data_transformation_dir,training_pipeline.TEST_FILE_NAME,training_pipeline.TEST_FILE_NAME.replace("csv", "npy"),)
         self.transformation_object_dir:str=os.path.join(self.data_transformation_dir,training_pipeline.DATA_TRANSFORMATION_OBJECT_DIR)
+        self.transformed_label_encoder_file:str=os.path.join(self.data_transformation_dir,training_pipeline.DATA_TRANSFORMED_LABEL_ENCODER_FILE)
 
     
 class ModelTrainerConfig:

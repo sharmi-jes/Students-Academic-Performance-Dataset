@@ -1,0 +1,27 @@
+[2025-05-10 13:47:28,548] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-10 13:47:28,548] 24 root - INFO - read the data from mongodb
+[2025-05-10 13:47:28,548] 42 root - INFO - store the data into store path as csv format
+[2025-05-10 13:47:28,548] 55 root - INFO - split the data as train and test
+[2025-05-10 13:47:28,548] 68 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-10 13:47:28,932] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-10 13:47:28,932] 24 root - INFO - read the data from mongodb
+[2025-05-10 13:47:28,932] 42 root - INFO - store the data into store path as csv format
+[2025-05-10 13:47:28,932] 55 root - INFO - split the data as train and test
+[2025-05-10 13:47:28,939] 68 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-10 13:47:31,392] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 13:47:31,398] 107 dagshub - INFO - Accessing as sharmi-jes
+[2025-05-10 13:47:31,820] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 13:47:31,824] 107 dagshub - INFO - Accessing as sharmi-jes
+[2025-05-10 13:47:32,044] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sharmi-jes/Students-Academic-Performance-Dataset "HTTP/1.1 200 OK"
+[2025-05-10 13:47:32,453] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sharmi-jes/Students-Academic-Performance-Dataset "HTTP/1.1 200 OK"
+[2025-05-10 13:47:32,708] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 13:47:32,709] 107 dagshub - INFO - Initialized MLflow to track repo "sharmi-jes/Students-Academic-Performance-Dataset"
+[2025-05-10 13:47:32,711] 107 dagshub - INFO - Repository sharmi-jes/Students-Academic-Performance-Dataset initialized!
+[2025-05-10 13:47:32,886] 114 fastapi - ERROR - Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+[2025-05-10 13:47:33,037] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 13:47:33,040] 107 dagshub - INFO - Initialized MLflow to track repo "sharmi-jes/Students-Academic-Performance-Dataset"
+[2025-05-10 13:47:33,041] 107 dagshub - INFO - Repository sharmi-jes/Students-Academic-Performance-Dataset initialized!

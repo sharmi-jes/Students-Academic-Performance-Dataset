@@ -1,0 +1,20 @@
+[2025-05-10 18:53:17,398] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-10 18:53:17,398] 24 root - INFO - read the data from mongodb
+[2025-05-10 18:53:17,398] 42 root - INFO - store the data into store path as csv format
+[2025-05-10 18:53:17,398] 55 root - INFO - split the data as train and test
+csv format
+[2025-05-10 18:53:17,398] 55 root - INFO - split the data as train and test
+[2025-05-10 18:53:17,398] 68 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-10 18:53:17,398] 68 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-10 18:53:20,557] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 18:53:20,570] 107 dagshub - INFO - Accessing as sharmi-jes
+[2025-05-10 18:53:20,963] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 18:53:20,974] 107 dagshub - INFO - Accessing as sharmi-jes
+[2025-05-10 18:53:21,178] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sharmi-jes/Students-Academic-Performance-Dataset "HTTP/1.1 200 OK"
+[2025-05-10 18:53:21,752] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 18:53:21,754] 107 dagshub - INFO - Initialized MLflow to track repo "sharmi-jes/Students-Academic-Performance-Dataset"
+[2025-05-10 18:53:21,754] 107 dagshub - INFO - Repository sharmi-jes/Students-Academic-Performance-Dataset initialized!
+[2025-05-10 18:53:22,000] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sharmi-jes/Students-Academic-Performance-Dataset "HTTP/1.1 200 OK"
+[2025-05-10 18:53:22,577] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-10 18:53:22,585] 107 dagshub - INFO - Initialized MLflow to track repo "sharmi-jes/Students-Academic-Performance-Dataset"
+[2025-05-10 18:53:22,585] 107 dagshub - INFO - Repository sharmi-jes/Students-Academic-Performance-Dataset initialized!

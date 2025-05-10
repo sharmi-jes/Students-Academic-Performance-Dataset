@@ -22,6 +22,7 @@ class DataTransformationArtifact:
     data_transformed_object_dir:str
     data_transformed_train_file:str
     data_transformed_test_file:str
+    data_transformed_label_encoder_file:str
 @dataclass
 class ClassificationMetricArtifact:
     accuracy_score: float

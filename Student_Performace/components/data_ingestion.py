@@ -51,7 +51,7 @@ class DataIngestion:
             return dataframe
 
         except Exception as e:
-            raise StudentExceptin(e,sys)
+            raise StudentException(e,sys)
     logging.info("split the data as train and test")
     def split_the_data_train_test(self,dataframe:pd.DataFrame):
         try:

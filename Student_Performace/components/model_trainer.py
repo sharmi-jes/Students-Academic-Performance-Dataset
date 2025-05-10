@@ -105,12 +105,13 @@ class ModelTrainer:
 
         # Load the preprocessor object used for data transformation
         preprocessor = load_object(self.data_transformation_artifact.data_transformed_object_dir)
+        label_encoder=load_object(self.data_transformation_artifact.data_transformed_label_encoder_file)
 
         # Ensure directory exists before saving the model
         os.makedirs(os.path.dirname(self.model_trainer_config.model_trainer_model_file_path), exist_ok=True)
 
         # Create a network model with the preprocessor and the best model
-        network_model = NetworkModel(preprocessor=preprocessor, model=best_model)
+        network_model = NetworkModel(preprocessor=preprocessor, model=best_model,encoder=label_encoder)
 
         # Save the model to the specified location
         save_object(self.model_trainer_config.model_trainer_model_file_path, obj=network_model)
