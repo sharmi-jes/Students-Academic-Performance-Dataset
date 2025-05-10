@@ -24,3 +24,8 @@ Student_Performace/pipeline/__init__.py
 Student_Performace/utils/__init__.py
 Student_Performace/utils/main_utils/__init__.py
 Student_Performace/utils/main_utils/utils.py
+Student_Performace/utils/ml_utils/__init__.py
+Student_Performace/utils/ml_utils/metric/__init__.py
+Student_Performace/utils/ml_utils/metric/classification_metric.py
+Student_Performace/utils/ml_utils/model/__init__.py
+Student_Performace/utils/ml_utils/model/estimator.py

@@ -10,6 +10,7 @@ from Student_Performace.utils.ml_utils.metric.classification_metric import get_c
 from Student_Performace.utils.ml_utils.model.estimator import NetworkModel
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import r2_score
+import mlflow
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import (
@@ -27,6 +28,30 @@ class ModelTrainer:
             self.data_transformation_artifact = data_transformation_artifact
         except Exception as e:
             raise StudentException(e, sys)
+
+    def mlflow_track(self,best_model,classificationmetric):
+        try:
+            with mlflow.start_run():
+    #              accuracy_score: float
+    # precision: float
+    # recall: float
+    # recall: float  # <-- new
+
+                accuracy_score=classificationmetric.accuracy_score
+                precision=classificationmetric.precision
+                recall=classificationmetric.recall
+                f1_score=classificationmetric.f1_score
+
+
+
+                mlflow.log_metric("accuracy_score",accuracy_score)
+                mlflow.log_metric("precision",precision)
+                mlflow.log_metric("recall",recall)
+                mlflow.log_metric("f1_score",f1_score)
+                mlflow.sklearn.log_model(best_model,'model')
+        except Exception as e:
+            raise StudentException(e,sys)
+
 
     def train_model(self, x_train, y_train, x_test, y_test):
         models = {
@@ -68,7 +93,12 @@ class ModelTrainer:
 
         # Evaluate classification metrics for train and test data
         classification_train_metric = get_classification_score(y_true=y_train, y_pred=y_train_pred)
+        
+        self.mlflow_track(best_model,classification_train_metric)
+
         classification_test_metric = get_classification_score(y_true=y_test, y_pred=y_test_pred)
+
+        self.mlflow_track(best_model,classification_test_metric)
 
         # Load the preprocessor object used for data transformation
         preprocessor = load_object(self.data_transformation_artifact.data_transformed_object_dir)
