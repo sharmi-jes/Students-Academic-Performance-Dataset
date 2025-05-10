@@ -1,12 +1,7 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: Student-Academic-Perfomrace
 Version: 0.0.1
-Summary: UNKNOWN
-Home-page: UNKNOWN
 Author: Sharmi anyum
 Author-email: anyumsharmila@gmail.com
-License: UNKNOWN
-Platform: UNKNOWN
-
-UNKNOWN
-
+Dynamic: author
+Dynamic: author-email
