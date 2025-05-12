@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 10000
 
 # Run the app with gunicorn (Render sets $PORT as an env variable)
-CMD ["gunicorn", "--workers=4", "--bind=0.0.0.0:${PORT}", "app:app"]
+CMD ["sh", "-c", "gunicorn --workers=4 --bind=0.0.0.0:$PORT app:app"]
