@@ -12,4 +12,6 @@ dagshub
 uvicorn
 python-multipart
 fastapi
+gunicorn
+docker
 -e .
