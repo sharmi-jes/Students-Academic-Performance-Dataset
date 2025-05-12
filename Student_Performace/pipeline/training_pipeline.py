@@ -6,6 +6,7 @@ from Student_Performace.components.data_validation import DataValidation
 from Student_Performace.components.data_transformation import DataTransformation
 from Student_Performace.components.model_trainer import ModelTrainer
 from Student_Performace.exception.exception import StudentException
+from Student_Performace.logging.logger import logging
 
 from Student_Performace.entity.config_entity import (
     TrainingPipelineConfig,
@@ -52,7 +53,7 @@ class TrainingPipeline:
     def start_data_transformation(self,data_validation_artifact:DataValidationArtifact):
         try:
             data_transformation_config=DataTransformationConfig(self.training_pipeline_config)
-            data_transformation=DataTansformation(data_validation_artifact,data_transformation_config)
+            data_transformation=DataTransformation(data_validation_artifact,data_transformation_config)
             data_transformation_artifact=data_transformation.initiate_data_transformation()
             logging.info(f"Data Transformation completed and artifacts {data_transformation_artifact}")
             return data_transformation_artifact
@@ -62,8 +63,8 @@ class TrainingPipeline:
     def start_model_trainer(self,data_transformation_artifact:DataTransformationArtifact):
         try:
             model_trainer_config=ModelTrainerConfig(self.training_pipeline_config)
-            model_trainer=ModelTRainer(data_transformation_artifact,model_trainer_config)
-            model_trainer_artifact-model_trainer.initiate_model_trainer()
+            model_trainer=ModelTrainer(data_transformation_artifact,model_trainer_config)
+            model_trainer_artifact=model_trainer.initiate_model_trainer()
             logging.info(f"model trainer completed and artifact {model_trainer_artifact}")
             return model_trainer_artifact
         except Exception as e:
