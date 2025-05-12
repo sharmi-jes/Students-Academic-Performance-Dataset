@@ -47,24 +47,6 @@ app.add_middleware(
 # Jinja templates
 templates = Jinja2Templates(directory="./templates")
 
-# Define the Pydantic model for the login data
-class LoginRequest(BaseModel):
-    username: str
-    password: str
-
-# FastAPI route to handle login
-@app.post("/login")
-async def login(request: LoginRequest):
-    # Retrieve the username and password from environment variables
-    username = os.getenv("USERNAME")
-    password = os.getenv("PASSWORD")
-
-    # Compare input credentials with environment variables
-    if request.username == username and request.password == password:
-        return {"message": "Login successful!"}
-    else:
-        raise HTTPException(status_code=401, detail="Invalid credentials!")
-
 @app.get("/", tags=["authentication"])
 async def index():
     return RedirectResponse(url="/docs")
