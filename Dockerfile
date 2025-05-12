@@ -1,17 +1,17 @@
-# Use the correct Python base image
+# Use official Python image
 FROM python:3.9
 
-# Set working directory in container
+# Set working directory
 WORKDIR /app
 
-# Copy contents to the container
-COPY . /app
+# Copy all files into container
+COPY . .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose default port (Render sets $PORT automatically)
-EXPOSE 10000
+# Expose the port
+EXPOSE 5000
 
-# Run the app with gunicorn (Render sets $PORT as an env variable)
-CMD ["sh", "-c", "gunicorn --workers=4 --bind=0.0.0.0:$PORT app:app"]
+# Run the application
+CMD ["python", "app.py"]
