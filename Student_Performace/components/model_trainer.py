@@ -21,7 +21,14 @@ from sklearn.ensemble import (
 from sklearn.model_selection import GridSearchCV
 
 import dagshub
-dagshub.init(repo_owner='sharmi-jes', repo_name='Students-Academic-Performance-Dataset', mlflow=True)
+import os
+dagshub.init(
+    repo_owner='sharmi-jes',
+    repo_name='Students-Academic-Performance-Dataset',
+    mlflow=True,
+    token=os.getenv("DAGSHUB_TOKEN")
+)
+
 
 
 class ModelTrainer:

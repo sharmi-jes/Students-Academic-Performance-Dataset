@@ -12,6 +12,8 @@ TEST_FILE_NAME='test.csv'
 
 SCHEMA_FILE_PATH=os.path.join("data_schema","schema.yaml")
 
+USERNAME="datagirl088"
+PASSOWRD="sharmila1"
 
 '''Data ingestion related constants'''
 

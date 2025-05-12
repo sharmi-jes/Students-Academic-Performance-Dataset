@@ -119,4 +119,5 @@ class DataValidation:
             raise StudentException(e,sys)
 
 
+# docker run -p 5000:5000 -e USERNAME=datagirl088 -e PASSWORD=sharmila1 student:app
 
