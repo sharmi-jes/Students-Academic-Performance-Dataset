@@ -14,7 +14,7 @@ from uvicorn import run as app_run
 from Student_Performace.exception.exception import StudentException
 from Student_Performace.logging.logger import logging
 from Student_Performace.pipeline.training_pipeline import TrainingPipeline
-from Student_Performace.constant.training_pipeline import USERNAME, PASSWORD
+# from Student_Performace.constant.training_pipeline import USERNAME, PASSWORD
 from Student_Performace.utils.main_utils.utils import load_object
 from Student_Performace.utils.ml_utils.model.estimator import NetworkModel
 from Student_Performace.constant.training_pipeline import (
