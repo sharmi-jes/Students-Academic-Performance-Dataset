@@ -21,6 +21,10 @@ from Student_Performace.constant.training_pipeline import (
     DATA_INGESTION_COLLECTION_NAME,
     DATA_INGESTION_DATABASE_NAME,
 )
+from fastapi import FastAPI
+from uvicorn import run
+
+app = FastAPI()
 
 # Load environment variables
 load_dotenv()
@@ -101,8 +105,7 @@ async def predict_route(request: Request, file: UploadFile = File(...)):
         traceback.print_exc()
         return {"error": str(e)}
 
+
 if __name__ == "__main__":
-    import os
-    port = int(os.environ.get("PORT", 8000))  # 👈 This line is critical
-    app_run(app, host="0.0.0.0", port=port)
+    run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
 

@@ -1,0 +1,11 @@
+[2025-05-13 21:22:26,737] 17 root - INFO - create the dataingestion class for perform the function
+[2025-05-13 21:22:26,737] 24 root - INFO - read the data from mongodb
+[2025-05-13 21:22:26,737] 42 root - INFO - store the data into store path as csv format
+[2025-05-13 21:22:26,737] 55 root - INFO - split the data as train and test
+[2025-05-13 21:22:26,737] 68 root - INFO - initta ethe data ingestion function to call all fuction
+[2025-05-13 21:22:32,391] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-13 21:22:32,407] 107 dagshub - INFO - Accessing as sharmi-jes
+[2025-05-13 21:22:33,027] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sharmi-jes/Students-Academic-Performance-Dataset "HTTP/1.1 200 OK"
+[2025-05-13 21:22:33,558] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-05-13 21:22:33,558] 107 dagshub - INFO - Initialized MLflow to track repo "sharmi-jes/Students-Academic-Performance-Dataset"
+[2025-05-13 21:22:33,558] 107 dagshub - INFO - Repository sharmi-jes/Students-Academic-Performance-Dataset initialized!
